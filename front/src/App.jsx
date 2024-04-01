@@ -1,6 +1,7 @@
 import Header from "./components/Header"
 import "./App.css"
 import MainProduct from "./components/MainProduct"
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <main id="main-container">
         <MainProduct />
       </main>
+      <Footer></Footer>
     </div>
   )
 }
