@@ -1,12 +1,13 @@
 import Header from "./components/Header"
 import "./App.css"
+import MainProduct from "./components/MainProduct"
 
 function App() {
   return (
     <div id="main-container">
       <Header />
       <main>
-        메인 콘텐츠
+        <MainProduct />
       </main>
     </div>
   )
