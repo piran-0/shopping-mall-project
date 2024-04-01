@@ -2,18 +2,18 @@ import { PRODUCT_LIST } from "../product"
 
 export default function MainProduct() {
     return (
-        <div>
-            <div>
+        <div id="mainProduct-container">
+            <div id="mainProduct-title">
                 <h1>BEST</h1>
                 <p>렌디몰에서 가장 인기있는 상품을 만나보세요</p>
             </div>
-            <ul>
+            <ul id="mainProduct-box-list">
                 {PRODUCT_LIST.map(product => (
-                    <li key={product.id}>
+                    <li key={product.id} id="mainProduct-products">
                         <button>
-                            <img src={product.image.src} alt={product.image.alt} />
-                            <h3>{product.title}</h3>
-                            <p>{product.price}원</p>
+                            <img id="mainProduct-products-image" src={product.image.src} alt={product.image.alt} />
+                            <h3 id="mainProduct-products-title">{product.title}</h3>
+                            <p id="mainProduct-products-price">{product.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}원</p>
                         </button>
                     </li>
                 ))}

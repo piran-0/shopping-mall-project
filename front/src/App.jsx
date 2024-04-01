@@ -4,9 +4,9 @@ import MainProduct from "./components/MainProduct"
 
 function App() {
   return (
-    <div id="main-container">
+    <div id="app-container">
       <Header />
-      <main>
+      <main id="main-container">
         <MainProduct />
       </main>
     </div>

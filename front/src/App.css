@@ -9,18 +9,19 @@ button {
   cursor: pointer;
 }
 
-#main-container {
+#app-container {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 2500px;
 }
 
+/* 헤더 css */
 #header {
   display: flex;
   justify-content: space-between;
   width: 1800px;
-  height: 260px;
+  height: 230px;
 }
 
 #header-logo-btn {
@@ -64,4 +65,55 @@ button {
   width: 136px;
   height: 250px;
   margin-left: 0;
+}
+
+#main-container {
+  margin-top: 80px;
+}
+
+/* MainProduct css */
+#mainProduct-container {
+  display: flex;
+  flex-direction: column;
+  width: 1400px;
+}
+
+#mainProduct-title {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 130px;
+}
+
+#mainProduct-title h1 {
+  font-size: 40px;
+}
+
+#mainProduct-title p {
+  font-size: 15px;
+  margin-top: 17px;
+}
+
+#mainProduct-box-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+#mainProduct-products {
+  margin-bottom: 80px;
+}
+
+#mainProduct-products-image {
+  border-radius: 5px;
+  box-shadow: 1px 5px 10px 5px rgb(184, 184, 184, 0.4);
+}
+
+#mainProduct-products-title {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+#mainProduct-products-price {
+  margin-top: 5px;
 }
