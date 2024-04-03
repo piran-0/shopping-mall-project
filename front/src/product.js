@@ -90,4 +90,31 @@ export const PRODUCT_LIST = [
     },
     price: 18500,
   },
+  {
+    id: "p10",
+    title: "10",
+    image: {
+      src: product1Img,
+      alt: "10",
+    },
+    price: 22000,
+  },
+  {
+    id: "p11",
+    title: "11",
+    image: {
+      src: product2Img,
+      alt: "빈티지 프린팅 반팔 티셔츠",
+    },
+    price: 14920,
+  },
+  {
+    id: "p12",
+    title: "12",
+    image: {
+      src: product3Img,
+      alt: "체크 포켓 셔츠",
+    },
+    price: 27900,
+  },
 ];

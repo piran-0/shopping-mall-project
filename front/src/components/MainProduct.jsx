@@ -12,8 +12,13 @@ export default function MainProduct() {
                     <li key={product.id} id="mainProduct-products">
                         <button>
                             <img id="mainProduct-products-image" src={product.image.src} alt={product.image.alt} />
-                            <h3 id="mainProduct-products-title">{product.title}</h3>
-                            <p id="mainProduct-products-price">{product.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}원</p>
+                            <div id="mainProduct-info">
+                                <div>
+                                    <h3 id="mainProduct-products-title">{product.title}</h3>
+                                    <p id="mainProduct-products-price">{product.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}원</p>
+                                </div>
+                                <button id="mainProduct-btn">+</button>
+                            </div>
                         </button>
                     </li>
                 ))}
