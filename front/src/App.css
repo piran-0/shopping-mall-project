@@ -20,8 +20,12 @@ button {
 #header {
   display: flex;
   justify-content: space-between;
-  width: 1800px;
-  height: 230px;
+  width: 100%;
+  height: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
 }
 
 #header-logo-btn {
@@ -45,12 +49,12 @@ button {
   display: flex;
   justify-content: space-between;
   width: 136px;
-  height: 250px;
+  height: 180px;
   margin-left: 0;
 }
 
 #main-container {
-  margin-top: 80px;
+  margin-top: 260px;
 }
 
 /* Nav css */

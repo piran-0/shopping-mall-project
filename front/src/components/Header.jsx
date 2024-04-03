@@ -1,4 +1,5 @@
 import logo from "../assets/logoImg.png"
+import logoDark from "../assets/logoImg-dark.png"
 import cartImg from "../assets/icon/cart.png"
 import searchImg from "../assets/icon/search.png"
 import userImg from "../assets/icon/user.png"
