@@ -20,7 +20,7 @@ export const PRODUCT_LIST = [
   },
   {
     id: "p2",
-    title: "빈티지 프린팅 반팔 티셔츠",
+    title: "빈티지 반팔 티셔츠",
     image: {
       src: product2Img,
       alt: "빈티지 프린팅 반팔 티셔츠",

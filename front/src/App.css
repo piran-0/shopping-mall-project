@@ -80,7 +80,7 @@ button {
 #mainProduct-container {
   display: flex;
   flex-direction: column;
-  width: 1450px;
+  width: 1400px;
 }
 
 #mainProduct-title {
@@ -101,17 +101,23 @@ button {
 
 #mainProduct-box-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  margin: 0;
   margin-top: 30px;
+  padding: 0;
 }
 
 #mainProduct-products {
   margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
 }
 
 #mainProduct-products-image {
-  width: 276px;
-  height: 350px;
+  width: 236px;
+  height: 300px;
   border-radius: 5px;
   box-shadow: 1px 5px 8px 5px rgb(184, 184, 184, 0.3);
 }
@@ -120,6 +126,7 @@ button {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin: 0;
 }
 
 #mainProduct-info div {
@@ -130,6 +137,7 @@ button {
   margin-top: 12px;
   margin-left: 10px;
   text-align: left;
+  font-size: 16px;
   color: rgb(51, 51, 51);
 }
 

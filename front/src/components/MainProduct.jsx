@@ -1,6 +1,6 @@
 import { PRODUCT_LIST } from "../product"
 
-export default function MainProduct() {
+export default function MainProduct({ addItem }) {
     return (
         <div id="mainProduct-container">
             <div id="mainProduct-title">
@@ -10,16 +10,14 @@ export default function MainProduct() {
             <ul id="mainProduct-box-list">
                 {PRODUCT_LIST.map(product => (
                     <li key={product.id} id="mainProduct-products">
-                        <button>
-                            <img id="mainProduct-products-image" src={product.image.src} alt={product.image.alt} />
-                            <div id="mainProduct-info">
-                                <div>
-                                    <h3 id="mainProduct-products-title">{product.title}</h3>
-                                    <p id="mainProduct-products-price">{product.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}원</p>
-                                </div>
-                                <button id="mainProduct-btn">+</button>
+                        <img id="mainProduct-products-image" src={product.image.src} alt={product.image.alt} />
+                        <div id="mainProduct-info">
+                            <div>
+                                <h3 id="mainProduct-products-title">{product.title}</h3>
+                                <p id="mainProduct-products-price">{product.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}원</p>
                             </div>
-                        </button>
+                            <button id="mainProduct-btn" onClick={() => addItem(product)}>+</button>
+                        </div>
                     </li>
                 ))}
             </ul>
