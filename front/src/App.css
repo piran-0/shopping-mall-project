@@ -193,3 +193,28 @@ button {
   text-align: right;
   margin-top: 20px;
 }
+
+/* 모달창 */
+#modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#modal {
+  width: 1200px;
+  height: 600px;
+  border: 1px solid lightgray;
+  z-index: 999;
+  position: absolute;
+  position: fixed;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+}

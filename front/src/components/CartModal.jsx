@@ -4,9 +4,12 @@ export default function CartModal({ setModalOpen }) {
     }
 
     return (
-        <div>
-            <div>장바구니</div>
-            <button onClick={closeModal}>닫기</button>
+        <div id="modal-background">
+            <div id="modal">
+                <div>장바구니</div>
+                <button onClick={closeModal}>닫기</button>
+            </div>
         </div>
     )
+
 }
