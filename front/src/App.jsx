@@ -11,6 +11,7 @@ function App() {
   function addProducts(product) {
     setProductInfo(prevProduct => {
       const newProduct = {
+        id: Math.floor(Math.random() * 100),
         image: product.image,
         title: product.title,
         price: product.price
@@ -27,7 +28,7 @@ function App() {
 
   return (
     <div id="app-container">
-      <Header />
+      <Header products={productInfo.products} />
       <main id="main-container">
         <MainProduct addItem={addProducts} />
       </main>

@@ -9,7 +9,7 @@ import userImg from "../assets/icon/user.png"
 import Nav from "./Nav"
 import CartModal from "./CartModal"
 
-export default function Header() {
+export default function Header({ products }) {
     const [modalOpen, setModalOpen] = useState(false)
     function showModal() {
         setModalOpen(true)
@@ -28,7 +28,7 @@ export default function Header() {
                 </div>
 
             </header>
-            {modalOpen && <CartModal setModalOpen={setModalOpen} />}
+            {modalOpen && <CartModal setModalOpen={setModalOpen} products={products} />}
         </>
     )
 }
